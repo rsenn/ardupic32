@@ -1,4 +1,4 @@
-  /*****************************************************************************
+/*****************************************************************************
  * ArduPIC32: An Arduino PIC32MX JTAG Programmer!
  *****************************************************************************
  * Author:   Tuomo Kaikkonen
@@ -44,7 +44,7 @@
  * 
  * For the rest of the schematic, refer to the Recommended 
  * Minimum Connection in the datasheet of your PIC32. 
-   * For PIC32MX1XX/2XX datasheet (61168C), this is found in Figure 2-1.
+ * For PIC32MX1XX/2XX datasheet (61168C), this is found in Figure 2-1.
  * 
  * The code has been successfully tested on Arduino NG with PIC32MX220F016B and
  * PIC32MX795F512H. Please let me know if you try with other chips!
@@ -159,14 +159,11 @@ void setup() {
 
 void loop() 
 {
-    Serial.println(VERSION_STRING);
-    Serial.flush();
-    
     Pic32JTAGDevice pic32;
     uint32_t addr;
     bool exit = false;
       
-
+    Serial.println(VERSION_STRING);
     PrintPICInfo( pic32 );
     Serial.println(F("Press \"H\" to start!"));
 
